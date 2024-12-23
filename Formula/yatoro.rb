@@ -18,6 +18,10 @@ class Yatoro < Formula
     end
   end
 
+  on_linux do
+    odie "yatoro is not available for Linux yet"
+  end
+
   def install
     bin.install "yatoro"
   end

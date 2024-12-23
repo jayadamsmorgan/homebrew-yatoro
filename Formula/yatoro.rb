@@ -3,7 +3,7 @@ class Yatoro < Formula
   homepage "https://github.com/jayadamsmorgan/Yatoro"
   version "0.3.0"
   license "MIT"
-  
+
   depends_on "notcurses"
 
   on_macos do

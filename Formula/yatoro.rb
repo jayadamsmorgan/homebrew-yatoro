@@ -1,20 +1,20 @@
 class Yatoro < Formula
   desc "VIM-like Apple Music Player in Terminal"
   homepage "https://github.com/jayadamsmorgan/Yatoro"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   depends_on "notcurses"
 
   on_macos do
     on_arm do
-      url "https://github.com/jayadamsmorgan/Yatoro/releases/download/v0.3.1/yatoro_macOS-arm64.zip"
-      sha256 "8ab8fbda0fed8580c480d428b13201fcb4c95138e731b09befc41b5ea5a25aff"
+      url "https://github.com/jayadamsmorgan/Yatoro/releases/download/v0.3.2/yatoro_macOS-arm64.zip"
+      sha256 "ddd134c64d21125f66ff0fd71a59831826228608c84497d289f0883cf6517409"
     end
 
     on_intel do
-      url "https://github.com/jayadamsmorgan/Yatoro/releases/download/v0.3.1/yatoro_macOS-x86_64.zip"
-      sha256 "2a9db540c6c20c5c2bb47314b935834755608690d8f66d740406782678abdb10"
+      url "https://github.com/jayadamsmorgan/Yatoro/releases/download/v0.3.2/yatoro_macOS-x86_64.zip"
+      sha256 "92c8dc16191608903f020fde89bdb80de4b6c986043c2c609fa1515e86975ec4"
     end
   end
 

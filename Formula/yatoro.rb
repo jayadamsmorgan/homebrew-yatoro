@@ -1,9 +1,9 @@
 class Yatoro < Formula
   desc "VIM-like Apple Music Player in Terminal"
   homepage "https://github.com/jayadamsmorgan/Yatoro"
-  url "https://github.com/jayadamsmorgan/Yatoro.git"
-  tag "v0.3.3"
-  version "0.3.3"
+  url "https://github.com/jayadamsmorgan/Yatoro.git",
+      tag:      "v0.3.3",
+      revision: "2df718faa9e15f859f51a6636fe71feafa847d3d"
   license "MIT"
   revision "2df718faa9e15f859f51a6636fe71feafa847d3d"
 

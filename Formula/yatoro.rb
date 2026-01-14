@@ -17,7 +17,7 @@ class Yatoro < Formula
     system "git", "commit", "-m", "Homebrew build"
     system "git", "tag", "v#{version}"
 
-    system "swift", "build", "-c", "release", "--disable-sandbox", "-Xcc", "-DNCURSES_UNCTRL_H_incl"
+    system "swift", "build", "--disable-sandbox", "-Xcc", "-DNCURSES_UNCTRL_H_incl"
     bin.install ".build/release/yatoro"
   end
 

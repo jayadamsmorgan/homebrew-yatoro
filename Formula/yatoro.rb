@@ -9,7 +9,7 @@ class Yatoro < Formula
   depends_on "notcurses"
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
+    system "swift", "build", "-c", "release", "--disable-sandbox", "-Xcc", "-DNCURSES_UNCTRL_H_incl"
     bin.install ".build/release/yatoro"
   end
 

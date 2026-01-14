@@ -9,6 +9,14 @@ class Yatoro < Formula
   depends_on "notcurses"
 
   def install
+    # Give Versionator a git repo to query (tarballs don't have .git)
+    system "git", "init"
+    system "git", "config", "user.email", "brew@localhost"
+    system "git", "config", "user.name", "Homebrew"
+    system "git", "add", "."
+    system "git", "commit", "-m", "Homebrew build"
+    system "git", "tag", "v#{version}"
+
     system "swift", "build", "-c", "release", "--disable-sandbox", "-Xcc", "-DNCURSES_UNCTRL_H_incl"
     bin.install ".build/release/yatoro"
   end
